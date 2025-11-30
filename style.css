@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.highlight {
+  background-color: #f5e89d;
+  transition: background-color 2s ease;
+}
+
+/* Color por defecto de los enlaces */
+a {
+  color: #7a003b;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+/* Cuando haces clic (activo) */
+a:active {
+  color: #d6b5cc; /* rojo */
+}
+
+body {
+  background-color: #fff0f6;
+  font-family: 'Trebuchet MS';
+  color: #c7446d;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Trebuchet MS';
+  background-color: #ffe6f0;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #ff9fcf;
+  font-family: 'Trebuchet MS';
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #ff9fcf;
+  border-bottom: 2px solid #ffb6d5;
+  padding-bottom: 5px;
+}
+
+ul, ol, dl {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #ffe6f0;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#uso {
+  line-height: 25px;
+}

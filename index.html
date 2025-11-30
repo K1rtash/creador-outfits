@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Creador de outfits</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function resaltar() {
+        const destino = document.getElementById("gestion"); // aquí sí existe
+        destino.classList.add("highlight");
+        setTimeout(() => destino.classList.remove("highlight"), 2000);
+      }
+    </script>
+</head>
+<body>
+  <header>
+    <h1>Creador de Outfits</h1>
+    <p>Organiza tu ropa y crea combinaciones fácilmente</p>
+  </header>
+
+  <main>
+    <section id="instalacion">
+      <h2>Instalación</h2>
+      <p>Elige la <a href="https://github.com/K1rtash/creador-outfits/releases/tag/v0.1.0-beta">ultima versión</a>, descarga y extrae la carpeta comprimida.</p>
+      <ul>
+        <li><strong>Windows:</strong> La primera vez que ejecutes la aplicación recibiras un mensaje de advertencia de windows defender.</li>
+      </ul>
+    </section>
+
+    <section id="uso">
+      <h2>Uso</h2>
+      <ol>
+        <li>Añade tus fotos en la carpeta  <code>ropa/</code> y su categoría <em>(camisa, pantalon, accesorios...)</em></li>
+        <li>Abre la aplicación. <code>CreadorOutfits.exe</code></li>
+        <li>Pulsa el botón <strong>+</strong> junto al nombre de cada categoría para añadir una prenda.</li>
+        <li>Usa las flechas <strong>&lt;</strong> y <strong>&gt;</strong> para navegar entre prendas.</li>
+        <li>Pulsa <strong>Guardar outfit</strong> y dale un nombre a tu conjunto para usarlo más tarde</li>
+        <li>Elige un outfit guardado con el menu desplegable y usa los <a href="#gestion" onclick="resaltar()">botones de gestión.</a></li>
+      </ol>
+    </section>
+
+    <section id="gestion">
+      <h2>Gestión de outfits</h2>
+      <ul>
+        <li><strong>Guardar outfit:</strong> escribe un nombre para conservar el outfit.</li>
+        <li><strong>Mostrar:</strong> cambia todas las prendas a las del outfit seleccionado.</li>
+        <li><strong>Eliminar:</strong> borra un outfit <em>(Las prendas no se eliminan de la aplicación)</em>.</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <dl>
+        <dt><strong>¿Dónde se guardan los conjuntos?</strong></dt>
+        <dd>En el archivo <code>conjuntos.json</code>.</dd>
+        <dt><strong>¿Qué formatos de imagen acepta?</strong></dt>
+        <dd>PNG, JPG y JPEG.</dd>
+        <dt><strong>¿Qué pasa si falta una carpeta de ropa?</strong></dt>
+        <dd>No se podra añadir esa categoría de prenda hasta que haya fotos en la carpeta</dd>
+        <dt><strong>¿Se puede hacer un outfit sin algunas categorías?</strong></dt>
+        <dd>Si, las categorías que no quieras usar puedes desactivarlas con el botón <strong>x</strong></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 K1rtash — Creador de Outfits</p>
+    <p><a href="https://github.com/K1rtash/creador-outfits">Creador de Outfits en GitHub</a></p>
+  </footer>
+</body>
+
+</html>
