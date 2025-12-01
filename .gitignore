@@ -3,3 +3,5 @@ dist/
 *.png
 ropa/
 conjuntos.json
+*.spec
+build/
